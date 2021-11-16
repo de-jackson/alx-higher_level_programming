@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <string.h>
 #include "lists.h"
 /**
  * insert_node - inserts a node in a linked list
