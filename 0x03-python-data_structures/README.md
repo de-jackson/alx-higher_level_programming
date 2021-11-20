@@ -38,7 +38,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * Allowed editors: ``vi, vim, emacs``
 * All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
 * All your files should end with a new line
-* Your code should use the ``Betty`` style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl} and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
+* Your code should use the ``Betty`` style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * In the following examples, the ``main.c`` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own ``main.c`` files at compilation. Our ``main.c`` files might be different from the one shown in the examples
