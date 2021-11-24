@@ -50,7 +50,7 @@ Write a function that computes the square value of all integers of a matrix.
 * You are not allowed to import any module
 * You are allowed to use regular loops, ``map``, etc.
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 0-main.py
 #!/usr/bin/python3
 square_matrix_simple = __import__('0-square_matrix_simple').square_matrix_simple
@@ -69,7 +69,7 @@ guillaume@ubuntu:~/0x04$ ./0-main.py
 [[1, 4, 9], [16, 25, 36], [49, 64, 81]]
 [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 guillaume@ubuntu:~/0x04$ 
-``
+```
 
 ## 1. Search and replace
 Write a function that replaces all occurrences of an element by another in a new list.
@@ -80,7 +80,7 @@ Write a function that replaces all occurrences of an element by another in a new
 * ``replace`` is the new element
 * You are not allowed to import any module
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 1-main.py
 #!/usr/bin/python3
 search_replace = __import__('1-search_replace').search_replace
@@ -95,14 +95,14 @@ guillaume@ubuntu:~/0x04$ ./1-main.py
 [1, 89, 3, 4, 5, 4, 89, 1, 1, 4, 89]
 [1, 2, 3, 4, 5, 4, 2, 1, 1, 4, 89]
 guillaume@ubuntu:~/0x04$ 
-``
+```
 ## 2. Unique addition
 Write a function that adds all unique integers in a list (only once for each integer).
 
 * Prototype: ``f uniq_add(my_list=[]):``
 * u are not allowed to import any module
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 2-main.py
 #!/usr/bin/python3
 uniq_add = __import__('2-uniq_add').uniq_add
@@ -114,7 +114,7 @@ print("Result: {:d}".format(result))
 guillaume@ubuntu:~/0x04$ ./2-main.py
 Result: 15
 guillaume@ubuntu:~/0x04$
-``
+```
 
 ## 3. Present in both
 Write a function that returns a set of common elements in two sets.
@@ -122,7 +122,7 @@ Write a function that returns a set of common elements in two sets.
 * Prototype: ``def common_elements(set_1, set_2):``
 * You are not allowed to import any module
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 3-main.py
 #!/usr/bin/python3
 common_elements = __import__('3-common_elements').common_elements
@@ -135,7 +135,7 @@ print(sorted(list(c_set)))
 guillaume@ubuntu:~/0x04$ ./3-main.py
 ['C']
 guillaume@ubuntu:~/0x04$ 
-``
+```
 
 ## 4. Only differents
 Write a function that returns a set of all elements present in only one set.
@@ -143,7 +143,7 @@ Write a function that returns a set of all elements present in only one set.
 * Prototype: ``def only_diff_elements(set_1, set_2):``
 * You are not allowed to import any module
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 4-main.py
 #!/usr/bin/python3
 only_diff_elements = __import__('4-only_diff_elements').only_diff_elements
@@ -156,7 +156,7 @@ print(sorted(list(od_set)))
 guillaume@ubuntu:~/0x04$ ./4-main.py
 ['Bash', 'Javascript', 'Perl', 'Python', 'Ruby']
 guillaume@ubuntu:~/0x04$ 
-``
+```
 
 ## 5. Number of keys
 Write a function that returns the number of keys in a dictionary.
@@ -164,7 +164,7 @@ Write a function that returns the number of keys in a dictionary.
 * Prototype: ``def number_keys(a_dictionary):``
 * You are not allowed to import any module
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 5-main.py
 #!/usr/bin/python3
 number_keys = __import__('5-number_keys').number_keys
@@ -176,7 +176,7 @@ print("Number of keys: {:d}".format(nb_keys))
 guillaume@ubuntu:~/0x04$ ./5-main.py
 Number of keys: 3
 guillaume@ubuntu:~/0x04$ 
-``
+```
 
 ## 6. Print sorted dictionary
 Write a function that prints a dictionary by ordered keys.
@@ -188,7 +188,7 @@ Write a function that prints a dictionary by ordered keys.
 * Dictionary values can have any type
 * You are not allowed to import any module
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 6-main.py
 #!/usr/bin/python3
 print_sorted_dictionary = __import__('6-print_sorted_dictionary').print_sorted_dictionary
@@ -202,7 +202,7 @@ ids: [1, 2, 3]
 language: C
 track: Low level
 guillaume@ubuntu:~/0x04$ 
-``
+```
 
 ## 7. Update dictionary
 Write a function that replaces or adds key/value in a dictionary.
@@ -214,7 +214,7 @@ Write a function that replaces or adds key/value in a dictionary.
 * If a key doesn’t exist in the dictionary, it will be created
 * You are not allowed to import any module
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 7-main.py
 #!/usr/bin/python3
 update_dictionary = __import__('7-update_dictionary').update_dictionary
@@ -254,7 +254,7 @@ language: Python
 number: 89
 track: Low level
 guillaume@ubuntu:~/0x04$ 
-``
+```
 
 ## 8. Simple delete by key
 Write a function that deletes a key in a dictionary.
@@ -264,7 +264,7 @@ Write a function that deletes a key in a dictionary.
 * If a key doesn’t exist, the dictionary won’t change
 * You are not allowed to import any module
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 8-main.py
 #!/usr/bin/python3
 simple_delete = __import__('8-simple_delete').simple_delete
@@ -302,7 +302,7 @@ Number: 89
 ids: [1, 2, 3]
 language: C
 guillaume@ubuntu:~/0x04$ 
-``
+```
 
 ## 9. Multiply by 2
 Write a function that returns a new dictionary with all values multiplied by 2
@@ -312,7 +312,7 @@ Write a function that returns a new dictionary with all values multiplied by 2
 * Returns a new dictionary
 * You are not allowed to import any module
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 9-main.py
 #!/usr/bin/python3
 multiply_by_2 = __import__('9-multiply_by_2').multiply_by_2
@@ -338,7 +338,7 @@ John: 24
 Mike: 28
 Molly: 32
 guillaume@ubuntu:~/0x04$ 
-``
+```
 
 ## 10. Best score
 Write a function that returns a key with the biggest integer value.
@@ -349,7 +349,7 @@ Write a function that returns a key with the biggest integer value.
 * You can assume all students have a different score
 * You are not allowed to import any module
 
-``
+```
 guillaume@ubuntu:~/0x04$ cat 10-main.py
 #!/usr/bin/python3
 best_score = __import__('10-best_score').best_score
@@ -365,7 +365,7 @@ guillaume@ubuntu:~/0x04$ ./10-main.py
 Best score: Molly
 Best score: None
 guillaume@ubuntu:~/0x04$ 
-``
+```
 
 ## 11. Multiply by using map
 Write a function that returns a list with all values multiplied by a number without using any loops.
