@@ -379,7 +379,7 @@ Write a function that returns a list with all values multiplied by a number with
 * You have to use ``map``
 * Your file should be max 3 lines
 
-`
+```
 guillaume@ubuntu:~/0x04$ cat 11-main.py
 #!/usr/bin/python3
 multiply_list_map = __import__('11-multiply_list_map').multiply_list_map
@@ -393,7 +393,7 @@ guillaume@ubuntu:~/0x04$ ./11-main.py
 [4, 8, 12, 16, 24]
 [1, 2, 3, 4, 6]
 guillaume@ubuntu:~/0x04$ 
-`
+```
 
 ## 12. Roman to Integer
 Technical interview preparation:
@@ -406,7 +406,7 @@ Create a function ``def roman_to_int(roman_string):`` that converts a ``[Roman n
 * ``def roman_to_int(roman_string)`` must return an integer
 * If the ``roman_string`` is not a string or ``None``, return 0
 
-`
+```
 guillaume@ubuntu:~/0x04$ cat 12-main.py
 #!/usr/bin/python3
 """ Roman to Integer test file
@@ -435,7 +435,7 @@ IX = 9
 LXXXVII = 87
 DCCVII = 707
 guillaume@ubuntu:~/0x04$ 
-`
+```
 
 ##
 
