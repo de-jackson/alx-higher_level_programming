@@ -250,7 +250,7 @@ except NameError as ne:
 guillaume@ubuntu:~/0x05$ ./6-main.py
 C is fun
 guillaume@ubuntu:~/0x05$ 
-``
+```
 
 ## 
 
