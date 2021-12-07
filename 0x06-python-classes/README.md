@@ -504,6 +504,8 @@ guillaume@ubuntu:~/0x06$ ./5-main.py
 
 --
 guillaume@ubuntu:~/0x06$ 
+```
+
 * File: 5-square.py
 
 ## 6. Coordinates of a square
