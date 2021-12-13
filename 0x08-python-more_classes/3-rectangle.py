@@ -20,7 +20,7 @@ class Rectangle:
 
         if self.__width == 0 or self.__height == 0:
             return ""
-        rect = ''
+        rect = ""
         for row in range(self.__height):
             for col in range(self.__width):
                 rect += "#"
