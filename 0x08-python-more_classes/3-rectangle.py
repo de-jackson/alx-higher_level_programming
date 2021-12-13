@@ -10,7 +10,7 @@ class Rectangle:
         Args:
             width: width of rectangle
             height: height of rectangle
-         """
+        """
 
         self.width = width
         self.height = height
@@ -30,53 +30,53 @@ class Rectangle:
                 rect += "\n"
         return rect
 
-        @property
-        def width(self):
-            """Retrieves the width"""
+    @property
+    def width(self):
+        """Retrieves the width"""
 
-            return self.__width
+        return self.__width
 
-        @width.setter
-        def width(self, value):
-            """Defines the width of the rectangle
-            Args:
-                value: the integer that represents the width
-            """
+    @width.setter
+    def width(self, value):
+        """Defines the width of the rectangle
+        Args:
+            value: the integer that represents the width
+        """
 
-            if type(value) is not int:
-                raise TypeError("width must be an integer")
-            if value < 0:
-                raise ValueError("width must be >= 0")
-            self.__width = value
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
-        @property
-        def height(self):
-            """Retrieves the height"""
+    @property
+    def height(self):
+        """Retrieves the height"""
 
-            return self.__height
+        return self.__height
 
-        @height.setter
-        def height(self, value):
-            """Defines the height of the rectangle
-            Args:
-                value: the integer that represents the height
-            """
+    @height.setter
+    def height(self, value):
+        """Defines the height of the rectangle
+        Args:
+            value: the integer that represents the height
+        """
 
-            if type(value) is not int:
-                raise TypeError("height must be an integer")
-            if value < 0:
-                raise ValueError("height must be >= 0")
-            self.__height = value
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
 
-        def area(self):
-            """Returns the area of the rectangle"""
+    def area(self):
+        """Returns the area of the rectangle"""
 
-            return (self.__height * self.__width)
+        return (self.__height * self.__width)
 
-        def perimeter(self):
-            """Returns the perimiter of the rectangle"""
+    def perimeter(self):
+        """Returns the perimiter of the rectangle"""
 
-            if self.__width == 0 or self.__height == 0:
-                return 0
-            else:
-                return (2 * (self.__width + self.__height))
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        else:
+            return (2 * (self.__width + self.__height))
