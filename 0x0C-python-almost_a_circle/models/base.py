@@ -58,13 +58,13 @@ class Base:
     @classmethod
     def load_from_file(cls):
         filename = cls.__name__ + ".json"
-        l = []
+        larray = []
         try:
             with open(filename, 'r') as f:
-                l = cls.from_json_string(f.read())
-            for i, e in enumerate(l):
-                l[i] = cls.create(**l[i])
-        except:
+                larry = cls.from_json_string(f.read())
+            for i, e in enumerate(larray):
+                larray[i] = cls.create(**larray[i])
+        except Exception as e:
             pass
         return l
 
@@ -86,7 +86,7 @@ class Base:
     def load_from_file_csv(cls):
         """deserializes a list of Rectangles/Squares in csv"""
         filename = cls.__name__ + ".csv"
-        l = []
+        larray = []
         try:
             with open(filename, 'r') as csvfile:
                 csv_reader = csv.reader(csvfile)
@@ -101,10 +101,10 @@ class Base:
                         dictionary = {"id": int(args[0]), "size": int(args[1]),
                                       "x": int(args[2]), "y": int(args[3])}
                     obj = cls.create(**dictionary)
-                    l.append(obj)
-        except:
+                    larray.append(obj)
+        except Exception as e:
             pass
-        return l
+        return larray
 
     @staticmethod
     def draw(list_rectangles, list_squares):
