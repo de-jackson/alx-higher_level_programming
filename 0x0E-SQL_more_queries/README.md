@@ -785,3 +785,122 @@ guillaume@ubuntu:~/$
 * GitHub repository: ``alx-higher_level_programming``
 * Directory: ``0x0E-SQL_more_queries``
 * File: [16-shows_by_genre.sql](./16-shows_by_genre.sql/)
+
+## 17. Not my genre
+Import the database dump from ``hbtn_0d_tvshows`` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as ``16-shows_by_genre.sql``)
+
+Write a script that uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter
+
+* The ``tv_shows`` table contains only one record where ``title`` = ``Dexter`` (but the id can be different)
+* Each record should display: ``tv_genres.name``
+Results must be sorted in ascending order by the genre name
+* You can use a maximum of two ``SELECT`` statement
+The database name will be passed as an argument of the ``mysql`` command
+
+```
+guillaume@ubuntu:~/$ cat 100-not_my_genres.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+Enter password: 
+name
+Adventure
+Comedy
+Fantasy
+guillaume@ubuntu:~/$ 
+```
+
+<b>Repo:</b>
+
+* GitHub repository: ``alx-higher_level_programming``
+* Directory: ``0x0E-SQL_more_queries``
+* File: [100-not_my_genres.sql](./100-not_my_genres.sql/)
+   
+## 18. No Comedy tonight!
+
+Import the database dump from ``hbtn_0d_tvshows`` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as ``100-not_my_genres.sql``)
+
+Write a script that lists all shows without the genre Comedy in the database ``hbtn_0d_tvshows``.
+
+* The tv_genres table contains only one record where ``name`` = ``Comedy`` (but the id can be different)
+* Each record should display: ``tv_shows.title``
+* Results must be sorted in ascending order by the show title
+* You can use a maximum of two ``SELECT`` statement
+* The database name will be passed as an argument of the ``mysql`` command
+```
+guillaume@ubuntu:~/$ cat 101-not_a_comedy.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+Enter password: 
+title
+Better Call Saul
+Breaking Bad
+Dexter
+Game of Thrones
+Homeland
+House
+guillaume@ubuntu:~/$ 
+```
+<b>Repo:</b>
+
+* GitHub repository: ``alx-higher_level_programming``
+* Directory: ``0x0E-SQL_more_queries``
+* File: [101-not_a_comedy.sql](./101-not_a_comedy.sql/)
+   
+## 19. Rotten tomatoes
+
+Import the database ``hbtn_0d_tvshows_rate`` dump to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows_rate.sql)
+
+Write a script that lists all shows from ``hbtn_0d_tvshows_rate`` by their rating.
+
+* Each record should display: ``tv_shows.title`` - ``rating sum``
+* Results must be sorted in descending order by the rating
+* You can use only one ``SELECT`` statement
+* The database name will be passed as an argument of the ``mysql`` command
+```
+guillaume@ubuntu:~/$ cat 102-rating_shows.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows_rate
+Enter password: 
+title   rating
+Better Call Saul    163
+Homeland    145
+Silicon Valley  82
+Game of Thrones 79
+Dexter  24
+House   21
+Breaking Bad    16
+The Last Man on Earth   10
+The Big Bang Theory 0
+New Girl    0
+guillaume@ubuntu:~/$ 
+```
+<b>Repo:</b>
+
+* GitHub repository: ``alx-higher_level_programming``
+* Directory: ``0x0E-SQL_more_queries``
+* File: [102-rating_shows.sql](./102-rating_shows.sql/)
+   
+## 20. Best genre
+
+Import the database dump from ``hbtn_0d_tvshows_rate`` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows_rate.sql) (same as ``102-rating_shows.sql``)
+
+Write a script that lists all genres in the database ``hbtn_0d_tvshows_rate`` by their rating.
+
+Each record should display: ``tv_genres.name`` - ``rating sum``
+Results must be sorted in descending order by their rating
+You can use only one ``SELECT`` statement
+The database name will be passed as an argument of the ``mysql`` command
+
+```
+guillaume@ubuntu:~/$ cat 103-rating_genres.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows_rate
+Enter password: 
+name    rating
+Drama   150
+Comedy  92
+Adventure   79
+Fantasy 79
+Mystery 45
+Crime   40
+Suspense    40
+Thriller    40
+guillaume@ubuntu:~/$ 
+```
+<b>Repo:</b>
+
+* GitHub repository: ``alx-higher_level_programming``
+* Directory: ``0x0E-SQL_more_queries``
+* File: [103-rating_genres.sql](./103-rating_genres.sql/)
