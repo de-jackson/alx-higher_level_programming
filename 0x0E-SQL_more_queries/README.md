@@ -132,7 +132,7 @@ id  name
 $
 ```
 
-<p align="center">
+<p align="left">
     <img src="bc2575fee3303b731031.png">
 </p>
 
@@ -140,51 +140,67 @@ $
 
 ## Question #0
 What DCL means?
+
 <b>Options</b>
+
 * Document Control Language
 * Data Control Language
 * Data Concept Language
 * Document Control Line
+
 <b>Answer</b>
+
 * Data Control Language
 
 ## Question #1
 Is it possible to give only read access to a database to a user?
+
 <b>Options</b>
+
 * Yes
 * No
+
 <b>Answer</b>
 * Yes
 
 ## Question #2
 Is it possible to give only read access to a table to a user?
+
 <b>Options</b>
 * Yes
 * No
+
 <b>Answer</b>
+
 * Yes
 
 ## Question #3
 Is it possible to give only read access to multiple databases and tables to a user?
+
 <b>Options</b>
 * Yes
 * No
+
 <b>Answer</b>
 * Yes
 
 ## Question #4
 Is it possible to give only delete access to a table to a user?
+
 <b>Options</b>
 * Yes
 * No
+
 <b>Answer</b>
 * Yes
 
 ## Question #5
 Is it possible to give only insert access to a table to a user?
+
 <b>Options</b>
 * Yes
 * No
+
 <b>Answer</b>
 * Yes
 
