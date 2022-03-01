@@ -4,12 +4,10 @@ const dictInput = require('./101-data').dict;
 const outDict = {};
 
 for (const key in dictInput) {
-	const ocurr = dictInput[key];
-	outDict[ocurr] = [];
-	for (const keys in dictInput) {
-		if (dictInput[keys] === ocurr) {
-			outDict[ocurr].push(keys);
-		}
+	if (dictInput[key] in outDict) {
+		outDict[dictInput[key]].push(key);
+	} else {
+		outDict[dictInput[key]] = [key];
 	}
 }
 console.log(outDict);
