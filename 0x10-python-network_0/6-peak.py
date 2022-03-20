@@ -4,19 +4,17 @@
 
 def find_peak(list_of_integers):
     """ finds the peak of an unsorted list of ints """
+    list_length = len(list_of_integers)
+    end = list_length - 1
     if not list_of_integers:
         return None
-    return rfind(list_of_integers, 0, len(list_of_integers) - 1,
-                 len(list_of_integers))
+    if list_of_integers[0] >= list_of_integers[1]:
+        return list_of_integers[0]
+    if list_of_integers[end] > list_of_integers[end - 1]:
+        return list_of_integers[end]
 
-
-def rfind(ilist, start, end, length):
-    """ recursive function to find peak """
-    mid = start + (end - start) // 2
-    if (mid == 0 or ilist[mid - 1] <= ilist[mid]) and\
-       (mid == length - 1 or ilist[mid + 1] <= ilist[mid]):
-        return ilist[mid]
-    elif (mid > 0 and ilist[mid - 1] > ilist[mid]):
-        return rfind(ilist, start, mid - 1, length)
-    else:
-        return rfind(ilist, mid + 1, end, length)
+    for nums in range(1, end):
+        if list_of_integers[nums] > list_of_integers[nums + 1] and\
+           list_of_integers[nums] > list_of_integers[nums - 1]:
+            return list_of_integers[nums]
+    return None
